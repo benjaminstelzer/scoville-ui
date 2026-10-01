@@ -10,8 +10,9 @@ terms stay consistent across views and translations.
 On supported WordPress admin pages, it uses Core components and follows
 WordPress spacing, version requirements and translation conventions.
 
-The heat, in this case, is a task people can still understand and finish,
-whatever the layout, the interaction or the error.
+The name comes from the Scoville scale, which originally measured chili heat
+through dilution. The heat, in this case, is a task people can still
+understand and finish, whatever the layout, the interaction or the error.
 
 ## How it works
 
@@ -20,10 +21,10 @@ whatever the layout, the interaction or the error.
 - Read the relevant code and use the components the framework supports.
 - Apply the WordPress guidance to supported plugin-owned `wp-admin` pages.
   Editor surfaces and metaboxes keep their host's conventions.
-- Implement the affected states and responsive behavior, then look at the
-  rendered result and try the interactions.
 - Take blocked product decisions to whoever owns them. Where the visual
   direction is still open, stay within the framework's existing conventions.
+- Implement the affected states and responsive behavior, then look at the
+  rendered result and try the interactions.
 
 ## What it enforces
 
@@ -45,7 +46,8 @@ whatever the layout, the interaction or the error.
 - **Accessibility.** Reading order, names, relationships, contrast, focus and
   keyboard or touch behavior are checked.
 - **Visual checks.** Nothing is reported as working until the rendered
-  interface has been inspected and its interactions tested.
+  interface has been inspected and its interactions tested. Source checks
+  alone leave rendering and interaction unverified.
 - **WordPress conventions.** Each part of the page uses the appropriate
   WordPress components and design tokens. Existing PHP-rendered pages can stay
   in PHP.
@@ -56,8 +58,6 @@ The full instructions are in [SKILL.md](https://github.com/benjaminstelzer/scovi
 
 - Browser inspection, interaction checks and corrections take tokens and time.
 - WordPress tasks load extra platform guidance.
-- If only the source can be checked, rendering and interaction remain
-  unverified.
 
 ## How it was developed
 
@@ -90,7 +90,7 @@ This Skill works independently. Other Scoville Skills are optional.
 
 ### Install this Skill
 
-This package works on its own. Ask your agent host:
+Ask your agent host:
 
 ```text
 Install this Skill for all my projects from this exact package directory:
@@ -122,20 +122,18 @@ Audit the checkout interface for keyboard use, responsive behavior, accessibilit
 
 ### Checking the interface
 
+Use the styling options the component supports. If custom CSS is needed,
+explain why. Keep CSS values and the sizes actually rendered on screen apart.
+
 Make related edits together, then check the code and the rendered result,
 including spacing and alignment. If defects remain, collect the corrections
 and recheck the affected behavior once that batch is done.
-
-Use the styling options the component supports. If custom CSS is needed,
-explain why. Keep CSS values and the sizes actually rendered on screen apart.
 
 A consistency audit lists regions, variants and states, including content
 below the fold. Each finding points to the source, measurements and visual
 evidence, or explains what couldn't be checked. Look at alignment, text,
 whitespace, the inside of controls, icons, wrapping and clipping, and say
 which parts of the interface were checked.
-
-The name comes from the Scoville scale, which originally measured chili heat through dilution.
 
 ## Sources
 
@@ -181,6 +179,7 @@ these principles.
 - [Plan](https://github.com/benjaminstelzer/scoville-plan) keeps Plans, Work Items, Decisions and their status in the repository.
 - [UI](https://github.com/benjaminstelzer/scoville-ui) covers UI implementation, information structure, accessibility and rendered checks, with an optional WordPress adapter.
 - [Handoff](https://github.com/benjaminstelzer/scoville-handoff) passes active work to another agent or session.
+- [Project Context Cleanup](https://github.com/benjaminstelzer/scoville-suite) keeps requested project rules and index text concise without losing required context.
 
 ## License
 
