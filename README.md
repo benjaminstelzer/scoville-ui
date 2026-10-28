@@ -44,7 +44,13 @@ of check replaces usability testing with the people who will use the product.
 
 ## Compatibility
 
-Developed for Codex and Claude Code with the project's toolchain and browser or platform access for rendered checks and interactions. Fable, Astra, SOL or Opus (5.0+) are recommended. Luna 6 with High reasoning passed the selected comprehension and functional checks in Codex. Other routes and hosts remain unverified.
+Developed for Codex and Claude Code with the project's toolchain and
+browser or platform access for rendered checks.
+Targeted candidate-path tests in Codex with gpt-6.1-sol / low exercised a route
+ownership correction, structured WordPress classification, localization-readiness
+advice and review of supplied measurements and source complexity, while rendering,
+interactions, accessibility conformance, translation loading, other hosts and
+installed discovery remain unverified.
 
 ## Install
 
@@ -142,6 +148,7 @@ these principles.
 - [UI](https://github.com/benjaminstelzer/scoville-ui) covers UI implementation, information structure, accessibility and rendered checks, with an optional WordPress adapter.
 - [Handoff](https://github.com/benjaminstelzer/scoville-handoff) passes active work to another agent or session.
 - [Project Context Cleanup](https://github.com/benjaminstelzer/scoville-suite) keeps requested project rules and index text concise without losing required context.
+- [Skillwriter](https://github.com/benjaminstelzer/scoville-skillwriter) writes, simplifies and reviews Skills and reusable agent prompts.
 
 ## License
 
